@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
-import CertificateCard from "./CertificateCard";
-import { certificateData } from "./certificateData";
+import { educationData } from "./educationData";
+import EducationCard from "./EducationCard";
 
-function Certificates() {
+function Education() {
     return (
         <section
-            id="certificates"
+            id="education"
             className="bg-black text-white py-24 px-6"
         >
+
             <div className="max-w-6xl mx-auto">
 
                 <motion.h2
@@ -17,20 +18,20 @@ function Certificates() {
                     transition={{ duration: .8 }}
                     className="text-5xl font-bold text-center mb-4"
                 >
-                    Certifications
+                    Education
                 </motion.h2>
 
                 <p className="text-center text-gray-400 mb-16">
-                    Courses and certifications that strengthened my skills.
+                    My academic journey.
                 </p>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    {certificateData.map((certificate) => (
+                    {educationData.map((education) => (
 
-                        <CertificateCard
-                            key={certificate.title}
-                            certificate={certificate}
+                        <EducationCard
+                            key={education.degree}
+                            education={education}
                         />
 
                     ))}
@@ -38,8 +39,9 @@ function Certificates() {
                 </div>
 
             </div>
+
         </section>
     );
 }
 
-export default Certificates;
+export default Education;

@@ -1,52 +1,36 @@
-import { experiences } from "../../data/experience";
+import { motion } from "framer-motion";
+import ExperienceCard from "./ExperienceCard";
+import { experienceData } from "./experienceData";
 
 function Experience() {
   return (
     <section
       id="experience"
-      className="bg-black text-white py-32 px-6"
+      className="bg-black px-6 py-24 text-white"
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="mx-auto max-w-5xl">
 
-        <h2 className="text-5xl font-bold text-center mb-20">
-          Experience & Journey
-        </h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-4 text-center text-5xl font-bold"
+        >
+          Experience
+        </motion.h2>
 
-        <div className="relative border-l-2 border-purple-600">
+        <p className="mb-16 text-center text-gray-400">
+          My journey as a developer.
+        </p>
 
-          {experiences.map((item, index) => (
-            <div
-              key={index}
-              className="ml-10 mb-16 relative"
-            >
+        <div className="space-y-12">
 
-              <div
-                className="
-                  absolute
-                  -left-[49px]
-                  top-2
-                  w-6
-                  h-6
-                  rounded-full
-                  bg-purple-600
-                  border-4
-                  border-black
-                "
-              ></div>
-
-              <p className="text-purple-400 text-lg font-semibold">
-                {item.year}
-              </p>
-
-              <h3 className="text-3xl font-bold mt-2">
-                {item.title}
-              </h3>
-
-              <p className="text-gray-400 mt-4 leading-8">
-                {item.description}
-              </p>
-
-            </div>
+          {experienceData.map((experience) => (
+            <ExperienceCard
+              key={experience.title}
+              experience={experience}
+            />
           ))}
 
         </div>
