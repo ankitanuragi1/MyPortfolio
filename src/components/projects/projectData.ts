@@ -1,3 +1,4 @@
+import careerguide from '../../assets/projects/careerguide.png';
 export interface Project {
     title: string;
     description: string;
@@ -12,15 +13,15 @@ export const projectData: Project[] = [
         title: "Career Guide",
         description:
             "AI Powered Career Guidance Platform built using MERN Stack.",
-        image: "/projects/career-guide.png",
+        image: careerguide,
         technologies: [
             "React",
             "Node",
             "Express",
             "MongoDB"
         ],
-        github: "#",
-        live: "#"
+        github: "https://github.com/ankitanuragi1/CareerGuide-web",
+        live: "https://careerguide-web.netlify.app/"
     },
     {
         title: "Portfolio",
@@ -32,7 +33,7 @@ export const projectData: Project[] = [
             "TypeScript",
             "Tailwind"
         ],
-        github: "#",
+        github: "https://github.com/ankitanuragi1/MyPortfolio",
         live: "#"
     }
 ];
