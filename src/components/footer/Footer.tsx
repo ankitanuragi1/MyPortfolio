@@ -121,32 +121,32 @@ function Footer() {
               <SocialIcon
                 href="https://github.com/yourusername"
                 icon={FaGithub}
-                hoverColor="#ffffff"
-                glowColor="rgba(255,255,255,.6)"
+                color="#ffffff"
+                glow="rgba(255,255,255,.6)"
                 label="GitHub"
               />
 
               <SocialIcon
                 href="https://linkedin.com/in/yourusername"
                 icon={FaLinkedin}
-                hoverColor="#0A66C2"
-                glowColor="rgba(10,102,194,.6)"
+                color="#0A66C2"
+                glow="rgba(10,102,194,.6)"
                 label="LinkedIn"
               />
 
               <SocialIcon
                 href="https://instagram.com/yourusername"
                 icon={FaInstagram}
-                hoverColor="#E1306C"
-                glowColor="rgba(225,48,108,.6)"
+                color="#E1306C"
+                glow="rgba(225,48,108,.6)"
                 label="Instagram"
               />
 
               <SocialIcon
                 href="mailto:your@email.com"
                 icon={FaEnvelope}
-                hoverColor="#EA4335"
-                glowColor="rgba(234,67,53,.6)"
+                color="#EA4335"
+                glow="rgba(234,67,53,.6)"
                 label="Email"
               />
 
