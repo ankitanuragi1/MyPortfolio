@@ -15,6 +15,7 @@ function SkillProgress({ name, level }: SkillProgressProps) {
 
       <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
 
+        {/* Animate the data-driven percentage only after this bar enters the viewport. */}
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}

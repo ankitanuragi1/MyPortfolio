@@ -8,6 +8,7 @@ export interface SkillCategory {
     skills: Skill[];
 }
 
+// `level` drives the visual progress bar and represents a self-assessed proficiency percentage.
 export const skillsData: SkillCategory[] = [
     {
         title: "Frontend",

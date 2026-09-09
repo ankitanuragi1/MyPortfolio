@@ -24,6 +24,7 @@ function SocialIcon({
   };
 
   return (
+    // Inline event styles support data-driven brand colors without a CSS class per network.
     <a
       href={href}
       target="_blank"

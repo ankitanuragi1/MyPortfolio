@@ -77,11 +77,9 @@ function Navbar() {
           font-medium
           transition-all
           duration-300
-
+          hover:cursor-pointer
           hover:scale-105
           hover:bg-purple-700
-          hover:shadow-[0_0_25px_rgba(168,85,247,.5)]
-
           md:block
           "
         >
@@ -107,6 +105,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
 
+      {/* Keeps the closing animation mounted until Framer Motion finishes it. */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -129,6 +128,7 @@ function Navbar() {
 
                 <li key={item} className="w-full">
 
+                  {/* Close the drawer after navigating on small screens. */}
                   <a
                     href={`#${item.toLowerCase()}`}
                     onClick={() => setMenuOpen(false)}

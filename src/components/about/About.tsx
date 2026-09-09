@@ -1,17 +1,16 @@
-import profile from "../../assets/images/ankitn11.jpeg";
+import profile from "../../assets/images/aboutImg.png";
 function About() {
   return (
     <section
       id="about"
       className="min-h-screen bg-black text-white py-24 px-6"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl grid md:grid-cols-[500px_1fr] gap-10 items-center">
 
         {/* Left Side */}
         <div className="flex justify-center">
-          <div className="w-80 h-80 rounded-3xl bg-gradient-to-br from-purple-600 to-blue-600 p-1">
+          <div className="w-full max-w-100 h-90 rounded-3xl bg-gradient-to-br from-purple-600 to-blue-600 p-0.5">
             <div className="w-full h-full rounded-3xl bg-zinc-900 flex items-center justify-center">
-              {/* <span className="text-7xl">👨‍💻</span> */}
               <img
                 src={profile}
                 alt="Profile"
@@ -27,7 +26,7 @@ function About() {
             About Me
           </p>
 
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6">
             Passionate Full Stack Developer
           </h2>
 
@@ -85,6 +84,7 @@ function About() {
               py-3
               bg-purple-600
               rounded-xl
+              hover:cursor-pointer
               hover:bg-purple-700
               transition
             "

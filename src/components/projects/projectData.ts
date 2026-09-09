@@ -1,4 +1,5 @@
 import careerguide from '../../assets/projects/careerguide.png';
+import portfolioImg from '../../assets/projects/portfolioImg.png';
 export interface Project {
     title: string;
     description: string;
@@ -8,6 +9,7 @@ export interface Project {
     live: string;
 }
 
+// ProjectCard consumes this configuration, making new portfolio entries data-only changes.
 export const projectData: Project[] = [
     {
         title: "Career Guide",
@@ -27,7 +29,7 @@ export const projectData: Project[] = [
         title: "Portfolio",
         description:
             "Modern Portfolio Website built using React and TypeScript.",
-        image: "/projects/portfolio.png",
+        image: portfolioImg,
         technologies: [
             "React",
             "TypeScript",

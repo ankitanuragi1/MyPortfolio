@@ -13,6 +13,7 @@ export interface ContactItem {
   link?: string;
 }
 
+// Keep contact details in one place so the cards can be rendered from configuration.
 export const contactData: ContactItem[] = [
   {
     icon: FaEnvelope,

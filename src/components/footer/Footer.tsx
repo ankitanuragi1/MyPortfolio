@@ -152,6 +152,7 @@ function Footer() {
 
             </div>
 
+            {/* Return to the hero with a smooth scroll instead of a hard navigation. */}
             <button
 
               onClick={() =>
