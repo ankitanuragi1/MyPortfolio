@@ -3,7 +3,7 @@ import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
-import Experience from "./components/Experience/Experience";
+// import Experience from "./components/Experience/Experience";
 import Education from "./components/education/Education";
 import Certificates from "./components/certificates/Certificates";
 import Blog from "./components/blog/Blog";
